@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My HTML Document</title>
+    <link rel="stylesheet" href="dharma.css">
+</head>
+<body>
+<label for="batches">Choose Dharma Batch:</label>
+
+<select name="batches" id="batches" onchange="getBatchJson()">
+    <option value="jan6_15_morning">Jan6-15 Morning</option>
+    <option value="jan6_15_evening">Jan6-15 Evening</option>
+    <option value="jan17_26_morning">Jan17-26 Morning</option>
+    <option value="jan17_26_evening">Jan17-26 Evening</option>
+    <option value="jan28_feb6_morning">Jan28-Feb6 Morning</option>
+    <option value="jan28_feb6_evening">Jan28-Feb6 Evening</option>
+    <option value="feb17_26_morning">Feb17-26 Morning</option>
+    <option value="feb17_26_evening">Deb17-26 Evening</option>
+    <option value="march10_19_morning">March10-19 Morning</option>
+    <option value="march10_19_evening">March10-19 Evening</option>
+</select>
+<div id="container"></div>
+<canvas id="myChart" width="800" height="400"></canvas>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="dharma.js"></script>
+</html>
